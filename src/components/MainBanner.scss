@@ -1,0 +1,45 @@
+.main-banner{
+  .image{
+    background-size: cover;
+    width: 100%;
+    height: 120vh;
+    position: relative;
+    img{
+      top: 25%;
+      right: 10%;
+      width: 450px;
+      position: absolute;
+    }
+    .content{
+      position: absolute;
+      top: 40%;
+      left: 10%;
+      h1{
+        color: white;
+        border-bottom: 20px solid teal;
+        font-size: 8em;
+      }
+      p{
+        font-size: 2em;
+        color: white;
+      }
+    }
+  }
+}
+@media (max-width: 500px){
+  .main-banner{
+    .image{
+      background-position-x: 90%;
+      .content{
+        top: 55%;
+        right: 5%;
+        h1{
+          font-size: 5em;
+        }
+        p{
+          font-size: 1.5em;
+        }
+      }
+    }
+  }
+}
