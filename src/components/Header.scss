@@ -94,12 +94,28 @@
     }
     .nav-content{
       ul{
+        display: none;
+        flex-direction: column;
+        margin-top: 20px;
+        li{
+          margin: 6px 0px;
+          font-size: 1.3em;
+        }
+      }
+    }
+    .responsive-content{
+      ul{
         display: flex;
         flex-direction: column;
         margin-top: 20px;
         li{
           margin: 6px 0px;
           font-size: 1.3em;
+          text-align: center;
+          a{
+            font-size: 1.1em;
+            color: white;
+          }
         }
       }
     }
