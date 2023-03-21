@@ -94,7 +94,7 @@ export default function ObjetivosSection() {
 
   return (
     <div className='objetivos'>
-      <div className='row row-cols-3 g-5 mt-5'>
+      <div className='row row-cols-1 row-cols-sm-3 g-5 mt-5'>
         {
           items.map((item, i)=>
           <div data-aos-duration={item.aDuration} data-aos={item.animation} data-aos-easing={item.effect} data-aos-anchor-placement={item.anchor} >

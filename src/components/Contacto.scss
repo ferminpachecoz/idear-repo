@@ -66,3 +66,21 @@
   50% {bottom: 0px; left: 0px}
   100% {bottom: 50px; left: 0px;}
 }
+@media (max-width: 500px){
+  .contacto{
+    padding: 2em 1em;
+    .wrapper{
+      h1{
+        margin-left: 0px;
+        margin-bottom: 0.5em;
+        text-align: center;
+      }
+      form{
+        input{
+          margin: 0px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}

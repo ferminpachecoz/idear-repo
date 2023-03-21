@@ -5,7 +5,7 @@ export default function IdearTigre() {
   return (
     <div className='idear-tigre' id='dependencias'>
       <div className='shadow row g-0'>
-        <div className='col-9 title'>
+        <div className='col-12 col-sm-9 title'>
           <p
           data-aos-duration="1500" 
           data-aos="zoom-in-right" 
@@ -14,7 +14,7 @@ export default function IdearTigre() {
             Idear está en el municipio de Tigre
           </p>
         </div>
-        <div className='col-3 d-flex justify-content-center align-items-center'>
+        <div className='col-12 col-sm-3 d-flex justify-content-center align-items-center'>
           <a 
           href='http://ideartigre.com' 
           target="_blank"

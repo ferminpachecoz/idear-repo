@@ -5,10 +5,10 @@ export default function Footer() {
   return (
     <footer className='footer'>
       <div className='row'>
-        <div className='col-2 logo'>
+        <div className='col-12 col-sm-2 logo'>
           <h1><a href="/">Idear.</a></h1>
         </div>
-        <div className='col-3 social-media'>
+        <div className='col-12 col-sm-3 social-media'>
           <p>Innovacion en políticas públicas</p>
           <div className='d-flex icons'>
             <i className="bi bi-instagram"></i>
@@ -17,7 +17,7 @@ export default function Footer() {
             <i className="bi bi-twitter"></i>
           </div>
         </div>
-        <div className='col-7 footer-nav'>
+        <div className='col-12 col-sm-7 footer-nav'>
           <div>
             <p>Soporte</p>
             <a href="#">Contactanos</a>

@@ -3,7 +3,10 @@ import './Header.scss';
 import { HashLink as Link } from 'react-router-hash-link';
 
 export default function Header() {
-  const [display, setDisplay] = useState(false)
+  const display = () =>{
+    
+  }
+
   return (
     <div className='header-container row align-items-center'>
       <div className='col-6 col-sm-2 logo'>
