@@ -28,13 +28,13 @@ export default function Header() {
         <ul>
           <li><Link to="/">Home</Link></li>
           <li><Link to="/#quienes-somos">Quienes Somos</Link></li>
-          <li><Link to="/objetivos">Objetivos</Link></li>
+          <li><Link to="/objetivos">Perspectivas</Link></li>
           <li><Link to="/#contacto">Contacto</Link></li>
           <li><Link to="/#dependencias">Dependencias</Link></li>
         </ul>
       </div>
       <div className='col-4 button-container'>
-        <button><a href="/#contacto">Quiero Sumar</a></button>
+        <button><Link to="/#contacto">Quiero Sumar</Link></button>
       </div>
     </div>
   )

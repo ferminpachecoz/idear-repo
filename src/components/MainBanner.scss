@@ -15,13 +15,13 @@
       top: 40%;
       left: 10%;
       h1{
-        color: white;
-        border-bottom: 20px solid teal;
+        color: var(--text-white);
+        border-bottom: 20px solid var(--aqua);
         font-size: 8em;
       }
       p{
         font-size: 2em;
-        color: white;
+        color: var(--text-white);
       }
     }
   }

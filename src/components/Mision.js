@@ -30,7 +30,7 @@ export default function Mision() {
     {
       title: "Próposito",
       icon: "grupo.png",
-      text: "Poder comprender las decisiones que toman nuestros gobernantes. Nuestras comunidades necesitan de una participación más proactiva de nuestra parte, como ciudadanos tenemos el derecho a hacerlo sin formar parte de la estructura pública-política.",
+      text: "Recuperar el valor y la confianza en las instituciones públicas, curando la polarización existente, y trabajando por recuperar el sentido común de nuestros dirigentes; creando puentes de sinergia entre los actores públicos y privados en pos de un desarrollo sostenible.",
       color1: "#799F0C",
       color2: "#FFE000",
       animation: "fade-left",
@@ -57,7 +57,7 @@ export default function Mision() {
           data-aos-easing={item.effect} 
           data-aos-anchor-placement={item.anchor}>
             <div className='wrapper' key={i}>
-              <div className='title' style={{backgroundImage: `linear-gradient(to right, ${item.color1}, ${item.color2})`}}>
+              <div className='title' style={{background: `linear-gradient(white, white) padding-box, linear-gradient(to right, ${item.color1}, ${item.color2}) border-box`}}>
                 <p>{item.title}</p>
               </div>
               <div className='text'>
@@ -76,7 +76,7 @@ export default function Mision() {
       data-aos="zoom-in" 
       data-aos-easing="ease-in" 
       data-aos-anchor-placement="center-bottom">
-        <div className='title' style={{backgroundImage: `linear-gradient(to right, rgb(36, 31, 98), rgb(121, 45, 129))`}}>
+        <div className='title' style={{background: `linear-gradient(white, white) padding-box, linear-gradient(to right, rgb(36, 31, 98), rgb(121, 45, 129)) border-box`}}>
           <p>Valores</p>
         </div>
         <div className='text'>
