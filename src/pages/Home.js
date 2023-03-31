@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import IdearTigre from "../components/IdearTigre";
 import MainBanner from "../components/MainBanner";
 import Mision from "../components/Mision";
+import OdsSection from "../components/OdsSection";
 
 function Home() {
   return (
@@ -11,7 +12,7 @@ function Home() {
       <Header />
       <MainBanner />
       <Mision />
-      <IdearTigre />
+      <OdsSection />
       <Contacto />
       <Footer />
     </div>
