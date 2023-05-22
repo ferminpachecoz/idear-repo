@@ -1,4 +1,4 @@
-import Contacto from "../components/Contacto";
+import EquipoSection from "../components/EquipoSection";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import IdearTigre from "../components/IdearTigre";
@@ -13,7 +13,7 @@ function Home() {
       <MainBanner />
       <Mision />
       <OdsSection />
-      <Contacto />
+      <EquipoSection />
       <Footer />
     </div>
   );

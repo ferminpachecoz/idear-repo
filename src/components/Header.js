@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import './Header.scss';
 import { HashLink as Link } from 'react-router-hash-link';
 
-export default function Header() {
+export default function Header({bgDark}) {
   const [visible, setVisible] = useState(false)
 
   return (
@@ -17,7 +17,7 @@ export default function Header() {
             <li><Link to="/#">Newsletter</Link></li>
             <li><Link to="/#dependencias">Dependencias</Link></li>
             <li><Link to="/objetivos">Perspectivas</Link></li>
-            <li><Link to="/#contacto">Contacto</Link></li>
+            <li><Link to="/contacto">Contacto</Link></li>
           </ul>
         </div>
       }
@@ -27,7 +27,7 @@ export default function Header() {
           <li><Link to="/#">Newsletter</Link></li>
           <li><Link to="/#dependencias">Dependencias</Link></li>
           <li><Link to="/objetivos">Perspectivas</Link></li>
-          <li><Link to="/#contacto">Contacto</Link></li>
+          <li><Link to="/contacto">Contacto</Link></li>
         </ul>
       </div>
       <div className='col-4 button-container'>

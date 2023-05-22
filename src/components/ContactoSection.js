@@ -8,7 +8,6 @@ export default function Contacto() {
 
       </div>
       <div className='col-12 col-sm-8 wrapper'>
-        <h1>Contactanos</h1>
         <form>
           <div className='row mb-4'>
             <input type="text" className='col-12 col-md' placeholder='Nombre *' />
