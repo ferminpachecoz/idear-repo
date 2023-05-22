@@ -7,30 +7,27 @@ export default function Header() {
 
   return (
     <div className='header-container row align-items-center'>
-      <div className='col-6 col-sm-2 logo'>
-        <a href="/"><h1>Idear.</h1></a>
-      </div>
       <div className='menu-burger col-6'>
         <i className="bi bi-list" onClick={()=> setVisible(!visible)}></i>
       </div>
       {visible &&
-        <div className='col-12 col-sm-6 responsive-content'>
+        <div className='col-12 col-sm-8 responsive-content'>
           <ul>
             <li><Link to="/">Home</Link></li>
-            <li><Link to="/#quienes-somos">Quienes Somos</Link></li>
-            <li><Link to="/objetivos">Objetivos</Link></li>
-            <li><Link to="/#contacto">Contacto</Link></li>
+            <li><Link to="/#">Newsletter</Link></li>
             <li><Link to="/#dependencias">Dependencias</Link></li>
+            <li><Link to="/objetivos">Perspectivas</Link></li>
+            <li><Link to="/#contacto">Contacto</Link></li>
           </ul>
         </div>
       }
-      <div className='col-12 col-sm-6 nav-content'>
+      <div className='col-12 col-sm-8 nav-content'>
         <ul>
           <li><Link to="/">Home</Link></li>
-          <li><Link to="/#quienes-somos">Quienes Somos</Link></li>
+          <li><Link to="/#">Newsletter</Link></li>
+          <li><Link to="/#dependencias">Dependencias</Link></li>
           <li><Link to="/objetivos">Perspectivas</Link></li>
           <li><Link to="/#contacto">Contacto</Link></li>
-          <li><Link to="/#dependencias">Dependencias</Link></li>
         </ul>
       </div>
       <div className='col-4 button-container'>

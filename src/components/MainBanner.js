@@ -4,12 +4,14 @@ import './MainBanner.scss';
 export default function MainBanner() {
   return (
     <div className='main-banner'>
-      <div className='image' style={{backgroundImage:"url('dark-bg-3.jpg')"}}>
-        <div className='content'>
-          <h1>IDEAR.</h1>
-          <p>Innovación en políticas públicas</p>
+        <div className='image' style={{backgroundImage:"url('backgrounds/3452835.jpg')"}}>
+          <div className='shadow'>
+            <div className='content'>
+              <h1>IDEAR.</h1>
+              <p>Innovación en políticas públicas</p>
+            </div>
+          </div>
         </div>
-      </div>
     </div>
   )
 }
