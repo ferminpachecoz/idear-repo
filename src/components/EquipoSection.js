@@ -2,7 +2,7 @@ import React from 'react';
 import './EquipoSection.scss';
 import Slider from "react-slick";
 
-export default function EquipoSection() {
+export default function EquipoSection({equipo, title, subtitle}) {
   const settings = {
     dots: false,
     infinite: true,
@@ -17,25 +17,36 @@ export default function EquipoSection() {
 
   return (
     <div className='equipo-section'>
-      <h1 className='section-title'>Nuestro Equipo</h1>
-      <p className='section-subtitle'>lorem ipsum dolor sit amet</p>
+      <h1 className='section-title'>{title}</h1>
+      <p className='section-subtitle'>{subtitle}</p>
       <Slider {...settings} style={{marginTop: "5em"}} >
-        <div className='carrousel-item'>
-          <img src="icons/blank-profile.png" alt="lorem ipsum dolor" />
-          <a href='#'>Carlos Fernandez</a>
-        </div>
-        <div className='carrousel-item'>
-          <img src="icons/blank-profile.png" alt="lorem ipsum dolor" />
-          <a href='#'>Carlos Fernandez</a>
-        </div>
-        <div className='carrousel-item'>
-          <img src="icons/blank-profile.png" alt="lorem ipsum dolor" />
-          <a href='#'>Carlos Fernandez</a>
-        </div>
-        <div className='carrousel-item'>
-          <img src="icons/blank-profile.png" alt="lorem ipsum dolor" />
-          <a href='#'>Carlos Fernandez</a>
-        </div>
+        {
+          equipo.map((item, i)=>
+            <div className='carrousel-item'>
+              <div className='image'>
+                <img src={item.image} alt="lorem ipsum dolor" />
+                <div className='shadow'>
+                <ul className='social'>
+                  <li>
+                    <a href="#"><i className="bi bi-instagram"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i className="bi bi-facebook"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i className="bi bi-linkedin"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i className="bi bi-twitter"></i></a>
+                  </li>
+                </ul>
+                </div>
+              </div>
+              <p className='name'>{item.name}</p>
+              <p className='trabajo'>{item.trabajo}</p>
+            </div>
+          )
+        }
       </Slider>
     </div>
   )

@@ -1,0 +1,33 @@
+.section-dependencias{
+  .content{
+    padding: 4em;
+    h2{
+      font-weight: 400;
+      font-size: 2em;
+    }
+    hr{
+      height: 4px;
+      background: linear-gradient(45deg, #56c8fb 0%, #627bed 100%);
+      width: 40%;
+      opacity: 1;
+      margin-bottom: 2em;
+    }
+    p{
+      color: rgb(78, 78, 78);
+      margin-bottom: 3em;
+    }
+    a{
+      border: none;
+      padding: 12px 1.5em;
+      border-radius: 100000px;
+      background: linear-gradient(45deg, #56c8fb 0%, #627bed 100%);
+      font-size: 1.2em;
+      color: white;
+      font-weight: 100;
+    }
+  }
+  .image{
+    background-position: center;
+    background-size: cover;
+  }
+}

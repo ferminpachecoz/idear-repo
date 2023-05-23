@@ -5,14 +5,67 @@
   }
   .carrousel-item{
     text-align: center;
-    img{
-      width: 150px;
-      border-radius: 100%;
-      margin: 0px auto;
+    .image{
+      position: relative;
+      overflow: hidden;
       margin-bottom: 1em;
+      margin: 0em 1em;
+      border-radius: 20px;
+      img{
+        width: 100%;
+        margin: 0px auto;
+      }
+      .shadow{
+        visibility: hidden;
+        height: 0px;
+        .social{
+          visibility: hidden;
+          height: 0px;
+        }
+      }
     }
-    a{
+    .image:hover{
+      .shadow{
+        visibility: visible;
+        background-color: rgba(25, 33, 39, 0.8);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: 0.5s;
+        .social{
+          visibility: visible;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 0px;
+          li{
+            margin: 0px 8px;
+            a{
+              border-radius: 100%;
+              background-color: rgba(255, 255, 255, 0.14);
+              padding: 10px 12px;
+              transition: 0.3s;
+              i{
+                color: white;
+                font-size: 1.2em;
+              }
+            }
+            a:hover{
+              background-color: #DE3660;
+            }
+          }
+        }
+      }
+    }
+    .name{
       font-size: 1.2em;
+      font-weight: 600;
+      margin-bottom: 0px;
     }
+    
   }
 }
